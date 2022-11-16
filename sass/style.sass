@@ -1,0 +1,445 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+@font-face 
+    font-family: "Ubuntu-Bold"
+    src: url(../fonts/Ubuntu-Bold.ttf)
+    font-weight: bold
+    font-style: normal
+@font-face 
+    font-family: "Ubuntu-Regular"
+    src: url(../fonts/Ubuntu-Regular.ttf)
+    font-weight: regular
+    font-style: normal
+@font-face 
+    font-family: "Ubuntu-Cond"
+    src: url(../fonts/UbuntuCondensed-Regular.ttf)
+    font-weight: regular
+    font-style: normal
+
+@import 'variables.sass'
+@import 'nav.sass'
+
+
+html
+    font-size: 62.5%
+    font-family: "Ubuntu-Regular"
+    background-color: $color-black
+    scroll-behavior: smooth
+.container
+    color: $color-text-white
+    max-width: 134rem
+    margin: 0 auto
+    padding: 0 1rem
+
+.header
+    display: flex
+    padding-top: 5rem
+    &__wrapper-one
+        font-size: 2.5rem
+        width: 30%
+    &__wrapper-one-img
+        margin-bottom: 34.6rem
+    &__wrapper-profession
+        margin-bottom: 2rem
+    &__wrapper-city
+        font-size: 1.8rem
+        color: $color-gray
+        span
+            color: $color-red
+    &__wrapper-two
+        position: relative
+        z-index: 3
+        width: 40%
+    &__wrapper-two-img
+        width: 105%
+        height: 70rem
+        object-fit: contain
+    &__wrapper-three
+        width: 30%
+        color: $color-red
+        text-align: end
+    &__wrapper-three-text
+        font-size: 3.2rem
+        margin-bottom: 2rem
+        text-transform: uppercase
+    &__wrapper-three-title
+        font-size: 4.2rem
+        font-family: "Ubuntu-Bold"
+        margin-bottom: 51.6rem
+.elipse
+    width: 100%
+    height: 540px
+    background-color: $color-red
+    border-radius: 100rem
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 16rem
+    right: -1rem
+    z-index: -1
+    &__subtract
+        width: 90%
+        height: 490px
+        background-color: $color-black
+        border-radius: 100rem
+.social
+    &__link
+        margin-left: 3rem
+        
+.wrapper__title
+    height: 4.2rem
+    margin-bottom: 5rem
+    margin-top: -2.6rem
+.title-box
+    position: relative
+    &:before
+        content:''
+        display: block
+        width: 100%
+        height: 4px
+        background-color: $color-text-white
+        position: absolute
+        top: 2.1rem
+    &__text
+        text-transform: uppercase
+        text-align: center
+        font-size: 4.2rem
+        margin-top:0
+        position: absolute
+        left: 10rem
+        background-color: $color-black
+        padding: 0 20px
+
+
+.about
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin-bottom: 7rem
+    &__box
+        width: 45%
+        border-radius: 3.3rem
+        padding: 5rem 2rem
+        &:hover
+            transition: 1s
+    &__box-title
+        font-size: 3.2rem
+        margin-bottom: 4rem
+        line-height: 150%
+        color: $color-red
+        font-family: "Ubuntu-Bold"
+        text-transform: uppercase
+        text-align: center
+    &__box-text
+        font-size: 1.8rem
+        line-height: 150%
+        color: $color-black
+        text-align: center
+        &:hover
+            color: $color-text-white
+            transition: 2s
+    &__total
+        font-size: 1.8rem
+        line-height: 140%
+        text-align: center
+        margin-bottom: 6rem
+
+
+.skills
+    &__title
+        margin-bottom: 5rem
+    &__text
+        left: 105.4rem
+    &__box
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-bottom: 5rem
+    &__box-item
+        width: 10rem
+        height: 10rem
+        border-radius: 2rem
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $color-text-white
+        margin-bottom: 1rem
+    &__box-item-text
+        font-size: 1.8rem
+        letter-spacing: 6%
+        color: $color-black
+.cards-wrapper
+    display: flex
+    justify-content: space-between
+.cards
+    width: 31%
+    padding: 3.2rem 2rem
+    border-radius: 3rem
+    border: .1rem solid $color-text-white
+    letter-spacing: 6%
+    text-align: center
+    margin-bottom: 5rem
+    &__title
+        font-size: 4.8rem
+        margin-bottom: 1rem
+    &__text
+        font-size: 1.6rem
+        color: $color-gray
+        margin-bottom: 5.8rem
+    &__img
+        width: 100%
+        margin-bottom: 2.8rem
+    &__text-info
+        font-size: 2rem
+        margin-bottom: 5.2rem
+        
+    &__button
+        width: 80%
+        height: 8rem
+        border-radius: 2.6rem
+        background: linear-gradient(120deg, darkmagenta, crimson, orange)
+        background-size: 200% 100%
+        background-position: 100% 0
+        transition: background-position .5s
+        border: 0
+        padding: 20px 30px
+        color: white
+        font-size: 2rem
+        border-radius: 10px
+        cursor: pointer
+        &:hover
+            background-position: 0 0
+            transform: translateY(-3px)
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+        &:active 
+            transform: translateY(-1px)
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+    &__button-link
+        font-size: 2.4rem
+        color: $color-black
+        text-decoration: none
+
+.composition
+    display: flex
+    position: relative
+    margin-bottom: 5rem
+    height: 51rem
+    &__img
+        width: 55%
+        position: absolute
+        z-index: 10
+        transition: all 0.3s
+        &_n1
+            left: 0
+            z-index: 9
+        &_n2
+            left: 33rem
+            z-index: 10
+        &_n3
+            right: 0
+            z-index: 8
+        &:hover
+            transform: scale(1.05)
+            z-index: 20
+    &:hover &__img:not(:hover)
+        transform: scale(0.95)
+
+.game 
+    width: 600px
+    height: 200px
+    border-bottom: 1px solid #000
+    margin: auto
+    background-color: white
+    border-radius: 1rem
+    margin-bottom: 1rem
+    
+    &__text
+        color: $color-text-white
+        font-size: 2rem
+        text-align: center
+        margin-bottom: 7rem
+
+#dino 
+    width: 50px
+    height: 50px
+    background-image: url(../img/dino.png)
+    background-size: 50px 50px
+    position: relative
+    top: 150px
+
+#cactus 
+    width: 40px
+    height: 40px
+    background-image: url(../img/cactus.png)
+    background-size: 40px 40px
+    position: relative
+    top: 110px
+    left: 580px
+    animation: cactusMov 2s infinite linear
+
+
+@keyframes cactusMov 
+    0%
+        left: 580px
+    
+    100%
+        left: -20px
+
+.jump 
+    animation: jump 0.3s linear
+
+@keyframes jump 
+    0%
+        top: 150px
+    
+    30% 
+        top: 100px
+    
+    50% 
+        top: 50px
+    
+    80% 
+        top: 100px
+    
+    100%
+        top: 150px
+
+.contacts
+    
+    &__box
+        text-align: center
+    &__box-logo
+        width: 10rem
+        margin-bottom: 3rem
+    &__box-text
+        font-size: 1.6rem
+        color: $color-gray
+        margin-bottom: 2.6rem
+    &__box-social
+        margin-bottom: 3.4rem
+    &__box-link
+        margin-right: 2rem
+        text-decoration: none
+        &:last-child
+            margin-right: 0rem
+    &__button
+        width: 13%
+        height: 5rem
+        border-radius: 2.2rem
+        background-color: $color-text-white
+        margin-bottom: 5rem
+    &__button-link
+        font-size: 1.6rem
+        color: $color-black
+        text-decoration: none
+
+
+@media (max-width: 991px)
+    html
+        font-size: 52%
+    .elipse
+        display: none
+    .wrapper__title
+        margin-top: 0
+    .cards-wrapper
+        flex-direction: column
+        align-items: center
+    .cards
+        width: 100%
+    .composition
+        height: 36rem
+    
+@media (max-width: 767px)
+    
+    .nav__list
+        display: none
+    .header__wrapper-one
+        width: 50%
+    .header__wrapper-three
+        width: 50%
+    .header__wrapper-two
+        display: none
+    .header__wrapper-one-img
+        margin-bottom: 12rem
+    .header__wrapper-three-title
+        margin-bottom: 33rem
+    .about__wrapper
+        flex-direction: column
+        align-items: center
+    .about__box
+        width: 100%
+    .about__box-text
+        color: $color-text-white
+    .skills__box-item
+        width: 49%
+    .composition
+        height: 155rem
+    .composition__img
+        width: 100%
+    .composition__img_n1
+        top: 48rem
+    .composition__img_n2
+        top: 96rem
+        left: 0
+    .play-game
+        display: none
+    .contacts__button
+        width: 50%
+        height: 7rem
+@media (max-width: 675px)
+    .composition
+        height: 148rem
+@media (max-width: 575px)
+    .header
+        flex-direction: column
+        align-items: center
+    .header__wrapper-one
+        width: 100%
+        display: flex
+        flex-direction: column
+        margin-bottom: 2rem
+        align-items: center
+    .header__wrapper-one-img
+        width: 50%
+    .header__wrapper-three
+        width: 100%
+        display: flex
+        flex-direction: column
+        text-align: center
+    .header__wrapper-three-title
+        margin-bottom: 3rem
+    .social__link
+        &:nth-child(1)
+            margin: 0
+    .header__wrapper-three-social
+        margin-bottom: 3rem
+    .title-box__text
+        left: 5rem
+    .wrapper__title
+        margin-bottom: 1rem
+    .about__box
+        padding: 0
+    .composition__img_n1
+        top: 48rem
+    .composition__img_n2
+        top: 96rem
+    .composition
+        height: 139rem
+@media (max-width: 500px)
+    .composition
+        height: 120rem
+    .composition__img_n1
+        top: 42rem
+    .composition__img_n2
+        top: 84rem   
+@media (max-width: 400px)
+    .composition
+        height: 95rem
+    .composition__img_n1
+        top: 33rem
+    .composition__img_n2
+        top: 66rem 
